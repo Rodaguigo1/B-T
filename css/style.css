@@ -878,6 +878,42 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+/* ===== BOTÃO DO PROJETO ===== */
+.projeto-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    padding: 12px 22px;
+    background: rgba(59, 130, 246, 0.08);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: var(--blue);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.projeto-btn:hover {
+    background: var(--blue);
+    color: var(--text);
+    border-color: var(--blue);
+    transform: translateX(4px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.projeto-btn:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+/* Tag customizada pro Yatta (vermelho/laranja pra artes marciais) */
+.projeto-tag-doj {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: #ef4444;
+}
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 968px) {
